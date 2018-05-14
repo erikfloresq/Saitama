@@ -35,8 +35,7 @@ class ViewController: UIViewController {
 
 extension ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        dump(viewModel.personRepository.getAll())
-        return viewModel.personRepository.getAll()
+        return viewModel.persons
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

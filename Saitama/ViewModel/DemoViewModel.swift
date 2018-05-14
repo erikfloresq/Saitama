@@ -16,7 +16,7 @@ enum Enviroment: String {
 
 class DemoViewModel {
 
-    let personRepository: PersonRepository
+    private let personRepository: PersonRepository
 
     init() {
         guard let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String else {
@@ -24,11 +24,11 @@ class DemoViewModel {
         }
         switch Enviroment(rawValue: configuration) {
         case .local?:
-            self.personRepository = LocalPersonRespository()
+            self.personRepository = LocalPersonRepository()
         case .debug?:
-            self.personRepository = WebPersonRespository()
+            self.personRepository = WebPersonRepository()
         case .none:
-            self.personRepository = LocalPersonRespository()
+            self.personRepository = LocalPersonRepository()
         }
     }
 

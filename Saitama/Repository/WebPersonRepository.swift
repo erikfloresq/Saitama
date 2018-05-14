@@ -9,7 +9,7 @@
 import Foundation
 import IGListKit
 
-struct WebPersonRespository: PersonRepository {
+struct WebPersonRepository: PersonRepository {
     func getAll() -> [ListDiffable] {
         return []
     }

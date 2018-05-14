@@ -4,7 +4,7 @@
  "name": "Erik"
  },
  {
- "primaryKey": 1,
+ "primaryKey": 2,
  "name": "Erik"
  },
  {
@@ -21,6 +21,6 @@
  },
  {
  "primaryKey": 6,
- "name": "Coffe"
+ "name": "Coffee"
  }
 ]

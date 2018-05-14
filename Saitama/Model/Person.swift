@@ -9,7 +9,7 @@
 import Foundation
 import IGListKit
 
-class Person: Decodable{
+class Person: Decodable {
     let primaryKey: Int
     let name: String
 
@@ -19,16 +19,25 @@ class Person: Decodable{
     }
 }
 
-extension Person: ListDiffable {
 
+extension Person: ListDiffable {
+    /*
+     * diffIdentifier retornamos la id único de cada registro,
+     * En caso exista un registro que tenga el mismo id no será mostrado
+     * visualmente
+     */
     func diffIdentifier() -> NSObjectProtocol {
         return primaryKey as NSObjectProtocol
     }
 
+    // TODO
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        if self === object { return true }
-        guard let object = object as? Person else { return false }
-        return name == object.name
+        if self === object {
+            return true
+        }
+        guard let unwrappedObject = object as? Person else {
+            return false
+        }
+        return name == unwrappedObject.name
     }
-
 }
