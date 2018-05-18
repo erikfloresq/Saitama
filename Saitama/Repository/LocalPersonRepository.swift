@@ -9,24 +9,24 @@
 import Foundation
 import IGListKit
 
-struct LocalPersonRepository: PersonRepository {
+struct LocalPersonRepository: ResultRepository {
     func getAll() -> [ListDiffable] {
-        return LocalServer.getPersons(from: "Persons")
+        return LocalServer.getResults(from: "Results")
     }
 
-    func get(identifier: Int) -> Person? {
+    func get(identifier: Int) -> Result? {
         return nil
     }
 
-    func create(a: Person) -> Bool {
+    func create(a: Result) -> Bool {
         return false
     }
 
-    func update(a: Person) -> Bool {
+    func update(a: Result) -> Bool {
         return false
     }
 
-    func delete(a: Person) -> Bool {
+    func delete(a: Result) -> Bool {
         return false
     }
 

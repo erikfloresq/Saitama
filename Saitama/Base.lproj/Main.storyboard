@@ -27,25 +27,25 @@
             </objects>
             <point key="canvasLocation" x="102" y="549"/>
         </scene>
-        <!--List-->
+        <!--Result-->
         <scene sceneID="xEp-Or-H28">
             <objects>
-                <viewControllerPlaceholder storyboardName="List" id="vQe-dA-vEc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="y7z-xp-EtD"/>
+                <viewControllerPlaceholder storyboardName="Result" id="vQe-dA-vEc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="y7z-xp-EtD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zk2-oN-l0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="436"/>
+            <point key="canvasLocation" x="1094" y="418"/>
         </scene>
         <!--Setting-->
         <scene sceneID="J9o-NF-T1z">
             <objects>
                 <viewControllerPlaceholder storyboardName="Setting" id="Yrh-ue-dh1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zvU-sd-Czf"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="zvU-sd-Czf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8R-z5-LZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="696"/>
+            <point key="canvasLocation" x="1093" y="670"/>
         </scene>
     </scenes>
 </document>

@@ -9,16 +9,16 @@
 import UIKit
 import IGListKit
 
-class DemoSectionController: ListSectionController {
+class ResultSectionController: ListSectionController {
     // Referencia de objeto que manejará el modelo Person
-    private var object: Person?
+    private var object: Result?
 
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: (collectionContext?.containerSize.width)!, height: 250)
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "DemoCollectionViewCell", bundle: nil, for: self, at: index) as? DemoCollectionViewCell else {
+        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "ResultCollectionViewCell", bundle: nil, for: self, at: index) as? ResultCollectionViewCell else {
             return UICollectionViewCell()
         }
         Network.downloadImage(from: (object?.photo)!) { image in
@@ -32,7 +32,7 @@ class DemoSectionController: ListSectionController {
     }
 
     override func didUpdate(to object: Any) {
-        guard let unwrappedObject = object as? Person else {
+        guard let unwrappedObject = object as? Result else {
             return
         }
         self.object = unwrappedObject

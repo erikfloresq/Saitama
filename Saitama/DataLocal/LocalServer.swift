@@ -9,14 +9,14 @@
 import Foundation
 
 struct LocalServer {
-    static func getPersons(from file: String) -> [Person] {
+    static func getResults(from file: String) -> [Result] {
         guard let pathJSON = Bundle.main.url(forResource: file, withExtension: "json") else {
             fatalError("Problems with JSON URL")
         }
         do {
             let dataJSON = try Data(contentsOf: pathJSON)
             do {
-                let persons = try JSONDecoder().decode([Person].self, from: dataJSON)
+                let persons = try JSONDecoder().decode([Result].self, from: dataJSON)
                 return persons
             } catch {
                 debugPrint(error)

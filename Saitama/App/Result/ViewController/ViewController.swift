@@ -12,7 +12,7 @@ import IGListKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var demoCollectionView: UICollectionView!
-    let viewModel = DemoViewModel()
+    let viewModel = ResultViewModel()
     lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater(), viewController: self)
         adapter.dataSource = self
@@ -39,7 +39,7 @@ extension ViewController: ListAdapterDataSource {
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return DemoSectionController()
+        return ResultSectionController()
     }
 
     func emptyView(for listAdapter: ListAdapter) -> UIView? {

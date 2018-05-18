@@ -14,9 +14,9 @@ enum Enviroment: String {
     case debug
 }
 
-class DemoViewModel {
+class ResultViewModel {
 
-    private let personRepository: PersonRepository
+    private let resultRepository: ResultRepository
 
     init() {
         guard let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String else {
@@ -24,16 +24,16 @@ class DemoViewModel {
         }
         switch Enviroment(rawValue: configuration) {
         case .local?:
-            self.personRepository = LocalPersonRepository()
+            self.resultRepository = LocalPersonRepository()
         case .debug?:
-            self.personRepository = WebPersonRepository()
+            self.resultRepository = WebResultRepository()
         case .none:
-            self.personRepository = LocalPersonRepository()
+            self.resultRepository = LocalPersonRepository()
         }
     }
 
     var persons: [ListDiffable] {
-        return self.personRepository.getAll()
+        return self.resultRepository.getAll()
     }
 
 }

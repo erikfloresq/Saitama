@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DemoCollectionViewCell: UICollectionViewCell {
+class ResultCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var dummyImage: UIImageView!
     @IBOutlet weak var textDescription: UILabel!

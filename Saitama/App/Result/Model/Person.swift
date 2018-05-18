@@ -9,7 +9,7 @@
 import Foundation
 import IGListKit
 
-class Person: Decodable {
+class Result: Decodable {
     let primaryKey: Int
     let name: String
     let photo: String
@@ -22,7 +22,7 @@ class Person: Decodable {
 }
 
 
-extension Person: ListDiffable {
+extension Result: ListDiffable {
     /*
      * diffIdentifier retornamos la id único de cada registro,
      * En caso exista un registro que tenga el mismo id no será mostrado
@@ -37,7 +37,7 @@ extension Person: ListDiffable {
         if self === object {
             return true
         }
-        guard let unwrappedObject = object as? Person else {
+        guard let unwrappedObject = object as? Result else {
             return false
         }
         return name == unwrappedObject.name
