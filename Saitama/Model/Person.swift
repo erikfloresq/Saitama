@@ -12,10 +12,12 @@ import IGListKit
 class Person: Decodable{
     let primaryKey: Int
     let name: String
+    let photo: String
 
-    init(primaryKey: Int, name: String){
+    init(primaryKey: Int, name: String, photo: String){
         self.primaryKey = primaryKey
         self.name = name
+        self.photo = photo
     }
 }
 
@@ -27,7 +29,7 @@ extension Person: ListDiffable {
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         if let object = object as? Person {
-            return name == object.name
+            return primaryKey == object.primaryKey
         }
         return false
     }

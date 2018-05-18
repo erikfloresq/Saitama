@@ -22,6 +22,7 @@
 		082E190520A4F5FD00AC460D /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E190320A4F5FD00AC460D /* DemoCollectionViewCell.swift */; };
 		082E190620A4F5FD00AC460D /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082E190420A4F5FD00AC460D /* DemoCollectionViewCell.xib */; };
 		0873E9A320A6002F00CD2C8B /* DemoSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873E9A220A6002F00CD2C8B /* DemoSectionController.swift */; };
+		08EABA2920AF396100D0F3E5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EABA2820AF396100D0F3E5 /* Network.swift */; };
 		BB1F9B8AFEA7B825024B76D2 /* Pods_Saitama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A998570755D0360DA23DDDAC /* Pods_Saitama.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		082E190320A4F5FD00AC460D /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		082E190420A4F5FD00AC460D /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		0873E9A220A6002F00CD2C8B /* DemoSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSectionController.swift; sourceTree = "<group>"; };
+		08EABA2820AF396100D0F3E5 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		364D3BB60A3F0B29F98EBAF1 /* Pods-Saitama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.release.xcconfig"; sourceTree = "<group>"; };
 		5114C5C0BCC0FC3BC498A548 /* Pods-Saitama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.debug.xcconfig"; sourceTree = "<group>"; };
 		73D16C47542A0F9DEE7B9F67 /* Pods-Saitama.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.local.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.local.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				082E18E320A4F34100AC460D /* Assets.xcassets */,
 				082E18DC20A4F34000AC460D /* AppDelegate.swift */,
+				08EABA2820AF396100D0F3E5 /* Network.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				082E18FB20A4F51600AC460D /* DemoViewModel.swift in Sources */,
 				082E18DF20A4F34000AC460D /* ViewController.swift in Sources */,
 				082E18F720A4F50B00AC460D /* WebPersonRespository.swift in Sources */,
+				08EABA2920AF396100D0F3E5 /* Network.swift in Sources */,
 				082E18FD20A4F51F00AC460D /* Person.swift in Sources */,
 				0873E9A320A6002F00CD2C8B /* DemoSectionController.swift in Sources */,
 				082E18DD20A4F34000AC460D /* AppDelegate.swift in Sources */,

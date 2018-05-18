@@ -10,11 +10,11 @@ import UIKit
 
 class DemoCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var dummyImage: UIImageView!
     @IBOutlet weak var textDescription: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
 }

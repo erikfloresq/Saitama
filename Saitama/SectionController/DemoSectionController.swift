@@ -14,7 +14,7 @@ class DemoSectionController: ListSectionController {
     let viewModel = DemoViewModel()
 
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: (collectionContext?.containerSize.width)!, height: 50)
+        return CGSize(width: (collectionContext?.containerSize.width)!, height: 250)
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {
@@ -24,6 +24,11 @@ class DemoSectionController: ListSectionController {
         }
         let persons = viewModel.personRepository.getAll()
         if let person = persons[index] as? Person {
+            Network.downloadImage(from: person.photo) { image in
+                DispatchQueue.main.async {
+                    cell.dummyImage.image = image
+                }
+            }
             cell.textDescription.text = person.name
         }
         return cell

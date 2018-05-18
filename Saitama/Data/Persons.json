@@ -1,10 +1,12 @@
 [
  {
  "primaryKey": 1,
- "name": "Erik"
+ "name": "Hyrule",
+ "photo": "https://i.imgur.com/1MBXBqB.png"
  },
  {
- "primaryKey": 1,
- "name": "Fernando"
+ "primaryKey": 2,
+ "name": "Link",
+ "photo": "https://i.imgur.com/5yZM2MH.png"
  }
 ]

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,32 +13,45 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DemoCollectionViewCell" id="gTV-IL-0wX" customClass="DemoCollectionViewCell" customModule="Saitama" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+            <rect key="frame" x="0.0" y="0.0" width="437" height="249"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="338" height="50"/>
+                <rect key="frame" x="0.0" y="0.0" width="437" height="249"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcn-pB-to8">
-                        <rect key="frame" x="16" y="0.0" width="306" height="50"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Cl-rI-SqY">
+                        <rect key="frame" x="0.0" y="0.0" width="437" height="249"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ED5-H6-3vT">
+                                <rect key="frame" x="0.0" y="0.0" width="437" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="83q-Op-oMQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-eg-uza">
+                                <rect key="frame" x="0.0" y="210" width="42" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottomMargin" secondItem="Jcn-pB-to8" secondAttribute="bottom" id="COC-oe-ArO"/>
-                <constraint firstAttribute="trailingMargin" secondItem="Jcn-pB-to8" secondAttribute="trailing" id="K8z-Qa-88H"/>
-                <constraint firstItem="Jcn-pB-to8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="SzK-kN-sDk"/>
-                <constraint firstItem="Jcn-pB-to8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="n21-GR-ZaK"/>
+                <constraint firstItem="0Cl-rI-SqY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uv5-aa-atf"/>
+                <constraint firstItem="0Cl-rI-SqY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ptu-9v-cKO"/>
+                <constraint firstAttribute="bottom" secondItem="0Cl-rI-SqY" secondAttribute="bottom" id="saY-wm-DJY"/>
+                <constraint firstAttribute="trailing" secondItem="0Cl-rI-SqY" secondAttribute="trailing" id="tnZ-UX-doZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="338" height="50"/>
+            <size key="customSize" width="437" height="249"/>
             <connections>
-                <outlet property="textDescription" destination="Jcn-pB-to8" id="ZmC-Wj-hs9"/>
+                <outlet property="dummyImage" destination="ED5-H6-3vT" id="B1N-sy-moo"/>
+                <outlet property="textDescription" destination="HpD-eg-uza" id="pkS-BF-dsa"/>
             </connections>
-            <point key="canvasLocation" x="178" y="54"/>
+            <point key="canvasLocation" x="184" y="69"/>
         </collectionViewCell>
     </objects>
 </document>
