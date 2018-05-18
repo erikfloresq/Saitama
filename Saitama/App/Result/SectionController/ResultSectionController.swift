@@ -10,7 +10,6 @@ import UIKit
 import IGListKit
 
 class ResultSectionController: ListSectionController {
-    // Referencia de objeto que manejará el modelo Person
     private var object: Result?
 
     override func sizeForItem(at index: Int) -> CGSize {

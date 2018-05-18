@@ -26,6 +26,9 @@
 		08EABA3120AF852D00D0F3E5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08EABA3020AF852D00D0F3E5 /* Result.storyboard */; };
 		08EABA3320AF856800D0F3E5 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08EABA3220AF856800D0F3E5 /* Setting.storyboard */; };
 		08EABA3720AF85EE00D0F3E5 /* ToolBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EABA3620AF85EE00D0F3E5 /* ToolBox.swift */; };
+		08EABA3A20AF924500D0F3E5 /* SettingSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EABA3920AF924500D0F3E5 /* SettingSectionController.swift */; };
+		08EABA4020AF92FE00D0F3E5 /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EABA3F20AF92FE00D0F3E5 /* SettingCollectionViewCell.swift */; };
+		08EABA4220AF931A00D0F3E5 /* SettingSectionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08EABA4120AF931A00D0F3E5 /* SettingSectionController.xib */; };
 		BB1F9B8AFEA7B825024B76D2 /* Pods_Saitama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A998570755D0360DA23DDDAC /* Pods_Saitama.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,9 @@
 		08EABA3020AF852D00D0F3E5 /* Result.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
 		08EABA3220AF856800D0F3E5 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		08EABA3620AF85EE00D0F3E5 /* ToolBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBox.swift; sourceTree = "<group>"; };
+		08EABA3920AF924500D0F3E5 /* SettingSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSectionController.swift; sourceTree = "<group>"; };
+		08EABA3F20AF92FE00D0F3E5 /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
+		08EABA4120AF931A00D0F3E5 /* SettingSectionController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingSectionController.xib; sourceTree = "<group>"; };
 		364D3BB60A3F0B29F98EBAF1 /* Pods-Saitama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.release.xcconfig"; sourceTree = "<group>"; };
 		5114C5C0BCC0FC3BC498A548 /* Pods-Saitama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.debug.xcconfig"; sourceTree = "<group>"; };
 		73D16C47542A0F9DEE7B9F67 /* Pods-Saitama.local.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saitama.local.xcconfig"; path = "Pods/Target Support Files/Pods-Saitama/Pods-Saitama.local.xcconfig"; sourceTree = "<group>"; };
@@ -144,13 +150,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		082E190720A4F60600AC460D /* DemoCollectionViewCell */ = {
+		082E190720A4F60600AC460D /* ResultCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				082E190320A4F5FD00AC460D /* ResultCollectionViewCell.swift */,
 				082E190420A4F5FD00AC460D /* ResultCollectionViewCell.xib */,
 			);
-			path = DemoCollectionViewCell;
+			path = ResultCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		082E190920A4F8BB00AC460D /* ViewController */ = {
@@ -178,7 +184,7 @@
 				08EABA2E20AF841F00D0F3E5 /* ViewModel */,
 				08EABA2D20AF841200D0F3E5 /* Model */,
 				082E190920A4F8BB00AC460D /* ViewController */,
-				082E190720A4F60600AC460D /* DemoCollectionViewCell */,
+				082E190720A4F60600AC460D /* ResultCollectionViewCell */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -187,6 +193,11 @@
 			isa = PBXGroup;
 			children = (
 				08EABA3220AF856800D0F3E5 /* Setting.storyboard */,
+				08EABA3E20AF92C300D0F3E5 /* ViewController */,
+				08EABA3D20AF92AE00D0F3E5 /* SettingCollectionViewCell */,
+				08EABA3C20AF929100D0F3E5 /* Model */,
+				08EABA3B20AF928900D0F3E5 /* ViewModel */,
+				08EABA3820AF921100D0F3E5 /* SectionController */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -221,6 +232,44 @@
 				08EABA2820AF396100D0F3E5 /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		08EABA3820AF921100D0F3E5 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				08EABA3920AF924500D0F3E5 /* SettingSectionController.swift */,
+			);
+			path = SectionController;
+			sourceTree = "<group>";
+		};
+		08EABA3B20AF928900D0F3E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		08EABA3C20AF929100D0F3E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		08EABA3D20AF92AE00D0F3E5 /* SettingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				08EABA3F20AF92FE00D0F3E5 /* SettingCollectionViewCell.swift */,
+				08EABA4120AF931A00D0F3E5 /* SettingSectionController.xib */,
+			);
+			path = SettingCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		08EABA3E20AF92C300D0F3E5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		0C9559152F7BBFDACF57DA1F /* Frameworks */ = {
@@ -306,6 +355,7 @@
 				082E18E720A4F34100AC460D /* LaunchScreen.storyboard in Resources */,
 				08EABA3320AF856800D0F3E5 /* Setting.storyboard in Resources */,
 				082E18E420A4F34100AC460D /* Assets.xcassets in Resources */,
+				08EABA4220AF931A00D0F3E5 /* SettingSectionController.xib in Resources */,
 				082E190020A4F52700AC460D /* Results.json in Resources */,
 				08EABA3120AF852D00D0F3E5 /* Result.storyboard in Resources */,
 				082E18E220A4F34000AC460D /* Main.storyboard in Resources */,
@@ -365,6 +415,8 @@
 				082E18F720A4F50B00AC460D /* WebPersonRepository.swift in Sources */,
 				08EABA2920AF396100D0F3E5 /* Network.swift in Sources */,
 				082E18FD20A4F51F00AC460D /* Person.swift in Sources */,
+				08EABA4020AF92FE00D0F3E5 /* SettingCollectionViewCell.swift in Sources */,
+				08EABA3A20AF924500D0F3E5 /* SettingSectionController.swift in Sources */,
 				0873E9A320A6002F00CD2C8B /* ResultSectionController.swift in Sources */,
 				082E18DD20A4F34000AC460D /* AppDelegate.swift in Sources */,
 				082E190120A4F52700AC460D /* LocalServer.swift in Sources */,
