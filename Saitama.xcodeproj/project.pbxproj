@@ -12,8 +12,8 @@
 		082E18E220A4F34000AC460D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E18E020A4F34000AC460D /* Main.storyboard */; };
 		082E18E420A4F34100AC460D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082E18E320A4F34100AC460D /* Assets.xcassets */; };
 		082E18E720A4F34100AC460D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082E18E520A4F34100AC460D /* LaunchScreen.storyboard */; };
-		082E18F720A4F50B00AC460D /* WebPersonRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18F420A4F50B00AC460D /* WebPersonRespository.swift */; };
-		082E18F820A4F50B00AC460D /* LocalPersonRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18F520A4F50B00AC460D /* LocalPersonRespository.swift */; };
+		082E18F720A4F50B00AC460D /* WebPersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18F420A4F50B00AC460D /* WebPersonRepository.swift */; };
+		082E18F820A4F50B00AC460D /* LocalPersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18F520A4F50B00AC460D /* LocalPersonRepository.swift */; };
 		082E18F920A4F50B00AC460D /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18F620A4F50B00AC460D /* PersonRepository.swift */; };
 		082E18FB20A4F51600AC460D /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18FA20A4F51600AC460D /* DemoViewModel.swift */; };
 		082E18FD20A4F51F00AC460D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E18FC20A4F51F00AC460D /* Person.swift */; };
@@ -47,8 +47,8 @@
 		082E18E320A4F34100AC460D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		082E18E620A4F34100AC460D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		082E18E820A4F34100AC460D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		082E18F420A4F50B00AC460D /* WebPersonRespository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPersonRespository.swift; sourceTree = "<group>"; };
-		082E18F520A4F50B00AC460D /* LocalPersonRespository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPersonRespository.swift; sourceTree = "<group>"; };
+		082E18F420A4F50B00AC460D /* WebPersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPersonRepository.swift; sourceTree = "<group>"; };
+		082E18F520A4F50B00AC460D /* LocalPersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPersonRepository.swift; sourceTree = "<group>"; };
 		082E18F620A4F50B00AC460D /* PersonRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
 		082E18FA20A4F51600AC460D /* DemoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
 		082E18FC20A4F51F00AC460D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			children = (
 				082E190220A4F5AA00AC460D /* SectionController */,
 				082E18F320A4F40C00AC460D /* Resource */,
-				082E18F220A4F40400AC460D /* Respository */,
+				082E18F220A4F40400AC460D /* Repository */,
 				082E18F120A4F3FF00AC460D /* Data */,
 				082E18F020A4F3DE00AC460D /* ViewModel */,
 				082E18EF20A4F3DA00AC460D /* View */,
@@ -145,14 +145,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		082E18F220A4F40400AC460D /* Respository */ = {
+		082E18F220A4F40400AC460D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				082E18F520A4F50B00AC460D /* LocalPersonRespository.swift */,
 				082E18F620A4F50B00AC460D /* PersonRepository.swift */,
-				082E18F420A4F50B00AC460D /* WebPersonRespository.swift */,
+				082E18F520A4F50B00AC460D /* LocalPersonRepository.swift */,
+				082E18F420A4F50B00AC460D /* WebPersonRepository.swift */,
 			);
-			path = Respository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		082E18F320A4F40C00AC460D /* Resource */ = {
@@ -331,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				082E18F820A4F50B00AC460D /* LocalPersonRespository.swift in Sources */,
+				082E18F820A4F50B00AC460D /* LocalPersonRepository.swift in Sources */,
 				082E190520A4F5FD00AC460D /* DemoCollectionViewCell.swift in Sources */,
 				082E18FB20A4F51600AC460D /* DemoViewModel.swift in Sources */,
 				082E18DF20A4F34000AC460D /* ViewController.swift in Sources */,
